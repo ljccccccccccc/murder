@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#div-game{
+    width: 100%;
+    height: 100%;
+}
+.row{
+    width: 30%;
+    overflow: hidden;
+    float: left;
+}
+#roominfo{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left:20px;
+    overflow: hidden;
+}
+
+.personinfo{
+    width:30%;
+    height:20%;
+    display: block;
+    position: relative;
+    float: left;
+}
+.row-hos{
+    position:absolute;
+    width:100%;
+    height:100%;
+    float: left;
+    background-color: rgba(8, 8, 8, 0.65);
+    border-radius: 50%;
+    top: -10%;
+    display: none;
+}
+.readysuccess{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url(../images/yes.jpg) center center;
+    bottom: 15%;
+    left: 80%;
+    display: none;
+}
+#onehead{
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    padding-left: 15%;
+    display: block;
+}
+.head{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+.gamingpositionid{
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+.ready{
+    width: 50px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    float: left;
+    border-radius: 20px;
+    text-decoration: none;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 40%;
+}
+.exit{
+    width: 50px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    float: right;
+    border-radius: 20px;
+    text-decoration: none;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 40%;
+}
+.gamingpositionid{
+    text-align: center;
+}
+#rightpart-gaming{
+    margin-top: 3%;
+    margin-right: 5%;
+    float: right;
+    width: 60%;
+    border: 1px solid black;
+    height: 70%;
+    padding: 1%;
+    overflow: hidden;
+}
+#rightpart-map{
+    display: inline-block;
+    width: 49%;
+    height: 100%;
+    border: 1px solid black;
+}
+#mapinfo{
+    float: left;
+    display: block;
+    height: 60%;
+    width: 100%;
+    background-color: rgba(237, 82, 57, 0.25);
+}
+#thread-info{
+    float: left;
+    display: block;
+    width: 100%;
+    height: 40%;
+    text-align:center;
+}
+.roominfo{
+	margin-top:10px;
+	width:46%;
+	height:50px;
+	padding:1%;
+	font-size:16px;
+    display: inline-block;
+    color:black;
+}
+#rightpart-msg{
+    display: inline-block;
+    width: 49%;
+    height: 100%;
+    border: 1px solid black;
+    margin-left: 1%;
+    background-color: aliceblue;
+}
+#rightpart-table{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    color: #ffffff;
+    text-align: center;
+    background-image:url("../images/bg-01.jpg") ;
+    background-size:cover;
+}
+
+#time{
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -400px;
+    background-color: rgb(45, 45, 45);
+}
+#time-note{
+    width: 50px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    background-color: blue;
+    line-height: 80px;
+}
+#time-content{
+	max-height:520px;
+	overflow:auto;
+}
+#secret-btn{
+    width: 80px;
+    height: 50px;
+    color: #ffffff;
+    background-color: rgba(129, 9, 212, 0.49);
+    outline: none;
+}
+.time-info{
+	margin-top:50px;
+    width: 350px;
+    overflow: hidden;
+}
+.time-data{
+    display: inline-block;
+    height: 100%;
+    width: 130px;
+    float: left;
+}
+.time-incident{
+    display: inline-block;
+    width:60%;
+    max-height: 100px;
+    overflow: auto;
+    float: left;
+    font-size:16px;
+}
+.time-incident-private{
+    display: none;
+    font-size:12px;
+}
+.time-incident-private .time-incident{
+	color:gray;
+	font-size:12px;
+}
+#story{
+    width: 400px;
+    max-height: 1000px;
+    padding: 40px;
+    position: absolute;
+    top: 0;
+    right: -400px;
+    background-color: rgb(45, 45, 45);
+}
+#story-content{
+	line-height:22px;
+	font-size:16px;
+	max-height: 520px;
+    overflow: auto;
+}
+#story-note{
+    display: block;
+    width: 50px;
+    height: 80px;
+    position: absolute;
+    top: 100px;
+    left: -50px;
+    background: #000;
+    line-height: 80px;
+}
+#thread{
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -400px;
+    background-color: rgb(45, 45, 45);
+}
+#thread-content{
+	width:100%;
+	padding:40px;
+	height:520px;
+	overflow:auto;
+}
+#thread-note{
+    width: 50px;
+    height: 80px;
+    position: absolute;
+    top: 200px;
+    left: -50px;
+    background-color: green;
+    line-height: 80px;
+}
+.thread-imgdiv{
+	width:300px;
+	height:200px;
+	display:block;
+}
+.thread-img{
+	width:100%;
+	height:100%;
+	display:block;
+}
+
+
+
+
+
+

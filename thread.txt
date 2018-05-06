@@ -1,0 +1,8 @@
+﻿[
+{'roomName':'案发现场(401客厅)','addrId':'01','status':'1'},
+{'roomName':'邦加的行李','addrId':'02','status':'1'},
+{'roomName':'401卧室','addrId':'03','status':'1'},
+{'roomName':'巴巴啦的房间','addrId':'04','status':'1'},
+{'roomName':'利特尔的房间','addrId':'15','status':'1'},
+{'roomName':'杜莎姆的房间','addrId':'14','status':'1'},
+]

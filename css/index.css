@@ -1,0 +1,161 @@
+/* CSS Document*/
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: Î¢ÈíÑÅºÚ;
+}
+body{
+	width: 100%;
+	/*height: 600px;*/
+	background: url("../images/killbg.jpg") center center no-repeat;
+}
+a{
+	text-decoration:none;
+}
+
+/*-----------------------Ö÷Ò³²¼¾Ö-----------------------*/
+html{
+	height:100%;max-height:100%;
+	position: relative;
+}
+#indexh1{
+	color: rgba(255, 255, 255, 0.81);
+	padding: 60px 80px;
+	font-size: 30px;
+}
+#indexdiv{
+	width: 400px;
+	height: 100px;
+	display: none;
+}
+#kill{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}
+#createRoom{
+	width: 100px;
+	height: 40px;
+	float: left;
+	color: rgba(255, 255, 255, 0.81);
+	background-color: rgba(0, 0, 0, 0.82);
+	outline: none;
+	border: 3px solid rgba(255, 0, 0, 0.37);
+	border-radius: 20px;
+	font-size: 18px;
+	font-family: Î¢ÈíÑÅºÚ;
+}
+#joinRoom{
+	width: 100px;
+	height: 40px;
+	float: right;
+	color: rgba(255, 255, 255, 0.81);
+	background-color: rgba(0, 0, 0, 0.82);
+	outline: none;
+	border: 3px solid rgba(255, 0, 0, 0.37);
+	border-radius: 20px;
+	font-size: 18px;
+	font-family: Î¢ÈíÑÅºÚ;
+}
+#roomId{
+	width: 80px;
+	height: 40px;
+	padding: 10px;
+	float: right;
+	background: transparent;
+	border: 3px solid rgba(255, 0, 0, 0.37);
+	border-radius: 20px;
+	outline: none;
+	color: rgba(255, 255, 255, 0.81);
+	font-family: Î¢ÈíÑÅºÚ;
+}
+/**/
+.container div{
+	display: none;
+}
+.container div:first-child{
+	display: block;
+}
+.left p{
+	font-size: 20px;
+	font-weight: 700;
+	color: #fff;
+}
+.userList .info img{
+ 	width: 50px;
+ 	height: 50px;
+ 	border-radius: 50%;
+ 	margin: 3px 0px;
+ 	position: relative;
+ 	left: 20px;
+}
+.content{
+	width: 1014px;
+	opacity: 0.3;
+	background: #fff;
+}
+.content div{
+	margin-right: 30px;
+	display: none;
+}
+.waiting{
+	margin-top: 60px;
+	width: 1014px;
+	height: 550px;
+}
+.waiting h2{
+	text-align: center;
+	line-height: 550px;
+}
+.chosing{
+	width: 1014px;
+	height: 550px;
+	margin-top: 60px;
+}
+.chosing .role{
+	width: 169px;
+	height: 550px;
+	background: #ccc;
+	border-right: 1px solid red;
+	float: left;
+	margin:0px;
+}
+.playing{
+	width: 1014px;
+	height: 550px;
+	background: #aff;
+	margin-top: 60px;
+}
+/* create */
+.ui-grid-a div{
+	width: 40%;
+	height: 70px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.ui-block-a {
+	background-color: pink;
+}
+.ui-block-b {
+	background-color: green;
+}
+#active {
+	background-color: #ccc;
+}
+#storyBack {
+	color:#FFFFFF;
+}
+/*-----------------ÓÎÏ·½çÃæ-----------------*/
+#div-game{
+	width: 100%;
+	overflow: hidden;
+}
+.row{
+	width: 100%;
+	overflow: hidden;
+}
+#roominfo{
+	width: 30%;
+	height: 100%;
+	float: left;
+}

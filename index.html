@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+   <meta charset="utf-8">
+    <title>谋杀之谜开始游戏...</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="bs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/test.css"/> 
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/gaming.css"> <!-- Resource style -->
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/gaming.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+</head>
+<body>
+<div id="div-join">
+	<div id="kill"><img src="./images/kill.jpg" alt="谋杀之名"/></div>
+	<div id='indexdiv'>
+		<h1 id="indexh1">欢迎来到谋杀之谜</h1>
+    	<button id="createRoom">创建</button>
+		<button id="joinRoom">加入</button>
+    	<input type="text" id="roomId"/>
+  </div>
+</div>
+
+<div id="div-createRoom">
+	<main class="cd-main-content" id="chose-story">
+		<div class="center">
+			<a data-storyid="01" peopleNum="3"  onclick="getData(this)" class="cd-btn cd-modal-trigger">致命巧克力</a><br><br><br>
+			<a data-storyid="02" peopleNum="6" onclick="getData(this)" class="cd-btn cd-modal-trigger">你画我猜</a><br><br><br>
+			<a data-storyid="03" peopleNum="6" onclick="getData(this)" class="cd-btn cd-modal-trigger">你画我猜</a><br><br><br>
+		</div>
+	</main> <!-- .cd-main-content -->
+
+	<div class="cd-modal">
+		<div class="modal-content" id="chose-story">
+			<h1>来了解一下你的故事吧</h1>
+			<p style="text-indent: 40px">
+			</p>
+			<form action="" class="choosebum">
+				<select name="select-1" id="peopleNum">
+					<option value="">请选择人数</option>
+					<option value="">3</option>
+					<option value="">6</option>
+				</select>
+			</form>
+			<div  id="btn-createRoom" onclick="loadDoc('data.json', myFunction)">
+				<a href="#" class="cd-btn">开始游戏</a>
+			</div>
+		</div> <!-- .modal-content -->
+		<a href="#0" class="modal-close">Close</a>
+	</div> <!-- .cd-modal -->
+	<div class="cd-transition-layer"> 
+		<div class="bg-layer"></div>
+	</div> <!-- .cd-transition-layer -->
+</div>
+
+<div id="div-game">
+    <div class="row">
+        <div id="roominfo">
+            <p>房间号：<span id="roomNumber"></span></p>
+            <!-- 用户列表 -->
+            <div class="userlist">
+                <div class="personinfo">
+                    <div class="row-bottom" id="onehead"><img src="images/tou.jpg" alt="头像" class="head"><span class="readysuccess"></span><span id="userId"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p><span id="storyBack"></span></p>
+   <div id="rightpart"></div>
+   <div id="rightpart-gaming">
+        <div id="rightpart-map">
+            <div id="mapinfo">这里是地图</div>
+            <div id="thread-info"></div>
+        </div>
+        <div id="rightpart-msg">
+
+
+            <div id="rightpart-table">
+                <div id="time">
+                    <span id="time-note" class="table-show">时间表</span>
+                    <div id="time-content">
+                        <button id="secret-btn">秘密</button>
+                        <div id="time-content-info"></div>
+                        <!--<div class="time-info">-->
+                            <!--<div class="time-data"></div>-->
+                            <!--<div class="time-incident">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+           
+                <div id="story">
+                    <span id="story-note" class="table-show">剧本</span>
+                    <div id="story-content"></div>
+                </div>
+                <div id="thread">
+                    <span id="thread-note" class="table-show">线索</span>
+                    <div id="thread-content"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
